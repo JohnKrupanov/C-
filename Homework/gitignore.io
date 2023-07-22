@@ -1,0 +1,3 @@
+bin/
+obj/
+Homework.csproj/
