@@ -70,3 +70,37 @@ while(count <= num)
    count++;
 }
 */
+
+// Задача 10: Напишите программу, которая принимает на вход трёхзначное число
+// и на выходе показывает вторую цифру этого числа.
+
+/*
+int CutNumber(int num) 
+{
+    int hundreds = num / 10;
+    int tenth = hundreds % 10;
+
+    return tenth;
+    }
+
+int randNumber = new Random().Next(100, 1000);
+
+int newNumber = CutNumber(randNumber);
+Console.WriteLine($"New version of {randNumber} is {newNumber}");
+*/
+
+// Задача 13: Напишите программу, которая выводит третью цифру заданного числа
+// ( или -1, если третьей цифры нет).
+
+int CutNumber(int num) 
+{
+    int hundreds = num / 100;
+    int units = num % 10;
+    if(hundreds >= 1) return units;
+    else return (num - (num + 1));  
+}
+
+int randNumber = new Random().Next(10, 1000);
+
+int newNumber = CutNumber(randNumber);
+Console.WriteLine($"New version of {randNumber} is {newNumber}");
