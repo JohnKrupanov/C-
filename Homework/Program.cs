@@ -92,6 +92,7 @@ Console.WriteLine($"New version of {randNumber} is {newNumber}");
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа
 // ( или -1, если третьей цифры нет).
 
+/*
 int CutNumber(int num) 
 {
     int hundreds = num / 100;
@@ -104,3 +105,22 @@ int randNumber = new Random().Next(10, 1000);
 
 int newNumber = CutNumber(randNumber);
 Console.WriteLine($"New version of {randNumber} is {newNumber}");
+*/
+
+//Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели,
+// и проверяет, является ли этот день выходным.
+
+bool week(int number)
+{
+    if(number == 6) 
+    return true;
+    else
+    if(number == 7)
+    return true;
+    else
+    return false;
+}
+Console.WriteLine("enter a number from 1 to 7: ");
+int number = Convert.ToInt32(Console.ReadLine());
+bool res = week(number);
+Console.WriteLine(res);
