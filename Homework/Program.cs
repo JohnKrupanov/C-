@@ -110,6 +110,7 @@ Console.WriteLine($"New version of {randNumber} is {newNumber}");
 //Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели,
 // и проверяет, является ли этот день выходным.
 
+/*
 bool week(int number)
 {
     if(number == 6) 
@@ -124,3 +125,88 @@ Console.WriteLine("enter a number from 1 to 7: ");
 int number = Convert.ToInt32(Console.ReadLine());
 bool res = week(number);
 Console.WriteLine(res);
+*/
+
+// Задача 19
+//Напишите программу, которая принимает на вход пятизначное число и проверяет,
+// является ли оно палиндромом.
+
+/*
+Console.Write("Enter a five-digit number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if((number / 10000) > 0 && (number / 10000) < 10)
+{
+    int num = number;
+    bool PaliTest(int num)
+    {
+    bool res = false;
+    int d1 = num / 10000;
+    int d2 = (num / 1000) % 10;
+    int d3 = (num / 10) % 10;
+    int d4 = num % 10;
+    res = ((d1 == d4) && (d2 == d3)) ? true : false;
+    return res;    
+    }
+    bool res = PaliTest(num);
+    Console.WriteLine(res);
+    }
+else
+{
+    Console.WriteLine("enter a five-digit number correctly");
+    }
+*/
+
+// Задача 21
+// Напишите программу, которая принимает на вход координаты двух точек и находит 
+// расстояние между ними в 3D пространстве.
+
+/*
+double Distance(double x1, double x2, double y1, double y2, double z1, double z2)
+{
+    double res = 0;
+    res = Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)+ Math.Pow(z1 - z2, 2));
+    return res;
+}
+Console.Write("Input x1: ");
+double x1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input y1: ");
+double y1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input z1: ");
+double z1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input x2: ");
+double x2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input y2: ");
+double y2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input z2: ");
+double z2 = Convert.ToDouble(Console.ReadLine());
+double lenght = Distance(x1,x2,y1,y2,z1,z2);
+Console.Write("Расстояние между точками равно: ");
+Console.WriteLine(Distance (x1, y1, z1, x2, y2, z2));
+*/
+
+
+// Задача 23
+// Напишите программу, которая принимает на вход число (N) и 
+// выдаёт таблицу кубов чисел от 1 до N.
+
+/*
+void cube(int n)
+{
+    if (n <= 0) Console.WriteLine("Uncorrected number");
+    else
+    {
+        int count = 1;
+        while (count <= n)
+        {
+            Console.WriteLine($"{count} - {Math.Pow(count,3)}");
+            count++;
+        }
+    }
+}
+
+Console.Write("input number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+cube(num);
+*/
