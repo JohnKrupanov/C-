@@ -69,5 +69,12 @@ void WriteArray(int[] array)
     Console.WriteLine();
 }
 
-// int[] myArray = CreateRandomArray(length, min, max);
-// WriteArray(myArray);
+Console.Write("Input a Length of an array: ");
+int length = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a min passible valse: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a max passible valse: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[] myArray = CreateRandomArray(length, min, max);
+WriteArray(myArray);
