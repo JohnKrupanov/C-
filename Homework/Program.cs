@@ -182,7 +182,7 @@ Console.Write("Input z2: ");
 double z2 = Convert.ToDouble(Console.ReadLine());
 double lenght = Distance(x1,x2,y1,y2,z1,z2);
 Console.Write("Расстояние между точками равно: ");
-Console.WriteLine(Distance (x1, y1, z1, x2, y2, z2));
+Console.WriteLine(Distance (x1, x2, y1, y2, z1, z2));
 */
 
 
