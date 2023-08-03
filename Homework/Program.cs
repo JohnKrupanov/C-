@@ -269,3 +269,145 @@ int ReadInt(string message)
     return Convert.ToInt32(Console.ReadLine());
 }
 */
+
+// Задача 34: Задайте массив заполненный случайными положительными 
+//трёхзначными числами. Напишите программу, которая покажет количество
+// чётных чисел в массиве.
+// [345, 897, 568, 234] -> 2
+
+/*
+int[] GenArray(int length, int minValue, int maxValue)
+{
+    int[] array = new int[length];
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(minValue, maxValue + 1);
+    }
+    return array;
+}
+
+void PrintArray(int[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length - 1; i++)
+    {
+        Console.Write(array[i] + ", ");
+    }
+    Console.WriteLine(array[array.Length - 1] + "]");
+}
+
+int CountElem(int[] array)
+{
+    int res = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (Test(array[i]))
+        {
+            res++;
+        }
+    }
+    return res;
+}
+
+bool Test(int n)
+{
+    return (n % 2 == 0);
+}
+
+int[] testArray = GenArray(4,100,999);
+
+PrintArray(testArray);
+
+int count = CountElem(testArray);
+
+Console.WriteLine(count);
+*/
+
+// Задача 36: Задайте одномерный массив, заполненный случайными числами. 
+// Найдите сумму элементов, стоящих на нечётных позициях.
+// [3, 7, 23, 12] -> 19
+// [-4, -6, 89, 6] -> 0
+
+/*
+int[] GenArray(int length, int minValue, int maxValue)
+{
+    int[] array = new int[length];
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(minValue, maxValue + 1);
+    }
+    return array;
+}
+
+void PrintArr(int[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length - 1; i++)
+    {
+        Console.Write(array[i] + ", ");
+    }
+    Console.WriteLine(array[array.Length - 1] + "]");
+}
+
+int SumPos (int [] array)
+{
+    int res = 0;
+    for (int i = 1; i < array.Length; i = i + 2)
+    {
+        res += array[i];
+    }
+    return res;
+}
+
+int[] testArray = GenArray(4,1,30);
+PrintArr(testArray);
+int oddValueSum = SumPos(testArray);
+Console.WriteLine(oddValueSum);
+*/
+
+// Задача 38: Задайте массив вещественных чисел. Найдите разницу между 
+// максимальным и минимальным элементов массива.
+// [3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
+
+/*
+double[] GenArray(int length, int minValue, int maxValue)
+{
+    double[] array = new double[length];
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(minValue, maxValue + 1);
+    }
+    return array;
+}
+
+void PrintArray(double[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length - 1; i++)
+    {
+        Console.Write(array[i] + ", ");
+    }
+    Console.WriteLine(array[array.Length - 1] + "]");
+}
+
+void PrintData(double res)
+{
+    Console.WriteLine(res);
+}
+
+double MaxMinSubtraction(double[] array)
+{
+    double max = double.MinValue;
+    double min = double.MaxValue;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] > max) max = array[i];
+        if (array[i] < min) min = array[i];
+    }
+    return max - min;
+}
+
+double[] testArray = GenArray(5, 1, 100);
+PrintArray(testArray);
+PrintData(MaxMinSubtraction(testArray));
+*/
