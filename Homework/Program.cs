@@ -422,7 +422,6 @@ string ReadDataStr(string msg)
     return Console.ReadLine() ?? "0";
 }
 
-//Метод считает кол-во положительных элементов
 int CountPositivNumber(string str)
 {
     int count = 0;
@@ -440,7 +439,7 @@ int CountPositivNumber(string str)
     return count;
 }
 
-string sequenceNumbers = ReadDataStr("Введите последовательность чисел: ");
+string sequenceNumbers = ReadDataStr("Введите последовательность чисел через запятую: ");
 
 int countPosNum = CountPositivNumber(sequenceNumbers);
 
