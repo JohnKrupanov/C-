@@ -411,3 +411,37 @@ double[] testArray = GenArray(5, 1, 100);
 PrintArray(testArray);
 PrintData(MaxMinSubtraction(testArray));
 */
+
+// Task 41
+// Пользователь вводит с клавиатуры M чисел.
+// Посчитайте, сколько чисел больше 0 ввёл пользователь.
+
+string ReadDataStr(string msg)
+{
+    Console.WriteLine(msg);
+    return Console.ReadLine() ?? "0";
+}
+
+//Метод считает кол-во положительных элементов
+int CountPositivNumber(string str)
+{
+    int count = 0;
+    
+    string strWoSp = str.Replace(" ", "");
+
+    string[] strArr = strWoSp.Split(",");
+    
+    int[] intArr = new int[strArr.Length];
+
+    for (int i = 0; i < intArr.Length; i++) intArr[i] = int.Parse(strArr[i]);
+
+    for (int i = 0; i < intArr.Length; i++) if (intArr[i] > 0) count++;
+
+    return count;
+}
+
+string sequenceNumbers = ReadDataStr("Введите последовательность чисел: ");
+
+int countPosNum = CountPositivNumber(sequenceNumbers);
+
+Console.WriteLine("Количество положительных чисел равно: " + countPosNum);
