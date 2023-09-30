@@ -1,0 +1,15 @@
+C:\Users\Евгений\Documents\GB\С#\Final examination\bin\Debug\net6.0\Final examination.exe
+C:\Users\Евгений\Documents\GB\С#\Final examination\bin\Debug\net6.0\Final examination.deps.json
+C:\Users\Евгений\Documents\GB\С#\Final examination\bin\Debug\net6.0\Final examination.runtimeconfig.json
+C:\Users\Евгений\Documents\GB\С#\Final examination\bin\Debug\net6.0\Final examination.dll
+C:\Users\Евгений\Documents\GB\С#\Final examination\bin\Debug\net6.0\Final examination.pdb
+C:\Users\Евгений\Documents\GB\С#\Final examination\obj\Debug\net6.0\Final examination.csproj.AssemblyReference.cache
+C:\Users\Евгений\Documents\GB\С#\Final examination\obj\Debug\net6.0\Final examination.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Евгений\Documents\GB\С#\Final examination\obj\Debug\net6.0\Final examination.AssemblyInfoInputs.cache
+C:\Users\Евгений\Documents\GB\С#\Final examination\obj\Debug\net6.0\Final examination.AssemblyInfo.cs
+C:\Users\Евгений\Documents\GB\С#\Final examination\obj\Debug\net6.0\Final examination.csproj.CoreCompileInputs.cache
+C:\Users\Евгений\Documents\GB\С#\Final examination\obj\Debug\net6.0\Final examination.dll
+C:\Users\Евгений\Documents\GB\С#\Final examination\obj\Debug\net6.0\refint\Final examination.dll
+C:\Users\Евгений\Documents\GB\С#\Final examination\obj\Debug\net6.0\Final examination.pdb
+C:\Users\Евгений\Documents\GB\С#\Final examination\obj\Debug\net6.0\Final examination.genruntimeconfig.cache
+C:\Users\Евгений\Documents\GB\С#\Final examination\obj\Debug\net6.0\ref\Final examination.dll
